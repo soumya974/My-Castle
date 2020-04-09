@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 
 var engine, world;
 var box1;
-var tower1;
+var trang1;
 
 function setup() {
   var canvas = createCanvas(1200,500);
@@ -31,7 +31,10 @@ function setup() {
 
     box16 = new Box(650,320,10,400);
     box17 = new Box(1110,320,10,400);
-
+  
+    var trang1 = createsprite(100, 100, 300, 100, 200, 300);
+    
+  
 
 }
 
@@ -60,8 +63,9 @@ function draw() {
   box16.display(0);
   box17.display(0);
 
-
+  trang1.display(0);
 
   ground.display();
+  
 
 }
